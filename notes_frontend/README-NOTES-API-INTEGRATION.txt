@@ -1,0 +1,1 @@
+Instructions: The frontend NotesApp.astro currently uses localStorage for notes simulation. Once the backend REST API (GET/POST/PATCH/DELETE /api/notes) is live, update the data functions (fetchNotes, saveNotes, etc.) to call backend endpoints, ensure CORS and authentication compatibility if required. Confirm API contract matches expected request/response structure.

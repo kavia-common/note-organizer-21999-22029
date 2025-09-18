@@ -1,0 +1,50 @@
+:root {
+	/* Ocean Professional Theme Colors */
+	--primary: #2563EB;
+	--secondary: #F59E0B;
+	--success: #F59E0B;
+	--error: #EF4444;
+	--background: #f9fafb;
+	--surface: #ffffff;
+	--text: #111827;
+	--gradient-from: #2563eb1a; /* blue-500/10 */
+	--gradient-to: #f9fafb;
+	--shadow-main: 0 2px 12px rgba(37, 99, 235, 0.18);
+	--shadow-hover: 0 6px 20px rgba(37, 99, 235, 0.22);
+}
+
+body {
+	background: linear-gradient(120deg, var(--gradient-from) 0%, var(--gradient-to) 100%);
+	color: var(--text);
+	font-family: 'Inter', 'Roboto', 'Segoe UI', 'Arial', sans-serif;
+	margin: 0;
+	transition: background 0.4s, color 0.4s;
+}
+
+a {
+	color: var(--primary);
+	text-decoration: none;
+	transition: color 0.2s;
+}
+
+a:hover {
+	color: var(--secondary);
+}
+
+.shadow {
+	box-shadow: var(--shadow-main);
+}
+
+.shadow-hover:hover {
+	box-shadow: var(--shadow-hover);
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+	background: #e4e8ef;
+	border-radius: 8px;
+}
